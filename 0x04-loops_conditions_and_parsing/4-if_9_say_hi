@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This will display "Holberton School" 10 times and will say "Hi" during the 9th
+count=1
+while [ "$count" -le 10 ]
+do
+    echo "Best School"
+    if [ "$count" -eq 9 ]; then
+	echo "Hi"
+    fi
+    (( count++ ))
+done

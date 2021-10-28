@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script will display "Holberton School" 10 times
+count=0
+while (( count < 10 ));
+do
+    echo "Best School";
+    (( i++ ));
+done
