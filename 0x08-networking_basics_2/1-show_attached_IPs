@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-hostname --all-ip-addresses | tr " " "\n"
-
+hostname --all-ip-addresses | cut -d " " -f 1-2 | tr " " "\n"
