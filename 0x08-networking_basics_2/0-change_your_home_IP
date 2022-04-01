@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This will change the hosts file on server
-echo"127.0.0.2	localhost
+echo "127.0.0.2	localhost
 8.8.8.8	facebook.com" > /etc/hosts
