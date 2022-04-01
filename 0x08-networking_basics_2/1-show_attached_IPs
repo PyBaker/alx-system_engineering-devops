@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+#This script will list all ip addresses on host machine
 hostname --all-ip-addresses | cut -d " " -f 1-2 | tr " " "\n"
