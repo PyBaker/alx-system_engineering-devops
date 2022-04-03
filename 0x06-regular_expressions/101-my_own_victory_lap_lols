@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+SENDER = /(?<=from:)(\+?\d+)(?=\])/
+RECEIVER = /(?<=to:)(\+?\d+)(?=\])/
+FLAGS = /(?<=flags:)(\+?\S+)(?=\])/
+
+File.foreach("./text_messages.log") { |line|
+  print line.scan(SENDER)[0][0]
+  print ','
+  print line.scan(RECEIVER)[0][0]
+  print ','
+  print line.scan(FLAGS)[0][0]
+  puts
+}
