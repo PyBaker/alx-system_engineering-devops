@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # This will ping an ip adress 5 Times 
+
 if [ -n "$1" ]; then
     ping -c 5 "$1"
 else 

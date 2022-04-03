@@ -1,2 +1,5 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/School/).join
+re = /School/
+ARGV.each do |a|
+  puts a.scan(re)
+end

@@ -1,2 +1,5 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/[A-Z]*/).join
+re = //
+ARGV.each do |a|
+  puts a.scan(re)
+end
