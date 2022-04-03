@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-re = /^hbt?n$/
+re = /^hb.?n$/
 ARGV.each do |a|
   puts a.scan(re)
 end
