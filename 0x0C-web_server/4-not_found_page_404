@@ -7,7 +7,7 @@ ufw allow 'Nginx HTTP'
 f_config="/etc/nginx/sites-available/default"
 echo "Holberton School" > index.html
 sudo mv index.html /var/www/html/
-sudo sed -i '/listen 80 default_server;/a rewrite ^/redirect_me https://github.com/George-byt permanent;' /etc/nginx/sites-available/default
+sudo sed -i '/listen 80 default_server;/a rewrite ^/redirect_me https://github.com/PyBaker permanent;' /etc/nginx/sites-available/default
 sudo echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/404.html
 error404="404.html"
 l_error404="/404.html {root /usr/share/nginx/html;\n internal;}"
