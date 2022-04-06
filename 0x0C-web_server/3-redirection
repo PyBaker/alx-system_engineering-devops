@@ -7,6 +7,6 @@ ufw allow 'Nginx HTTP'
 echo "Holberton School" > index.html
 sudo mv index.html /var/www/html/
 
-sudo sed -i '/listen 80 default_server;/a rewrite ^/redirect_me https://github.com/George-byt permanent;' /etc/nginx/sites-available/default
+sudo sed -i '/listen 80 default_server;/a rewrite ^/redirect_me https://github.com/PyBaker permanent;' /etc/nginx/sites-available/default
 
 sudo service nginx restart
