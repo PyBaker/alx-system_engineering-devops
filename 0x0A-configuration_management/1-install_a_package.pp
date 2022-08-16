@@ -1,11 +1,5 @@
-# script for installing lint
-# install puppet
-
-exec {"Comz":
-command => 'sudo apt-get update && apt-get upgrade -y',
-path    => '/usr/local/bin/:/bin/',
+# script for installing puppet-lint
+package { 'flask':
+ensure   => '2.1.0',
+provider => 'pip3',
 }
-  package { 'flask':
-    ensure   => '2.1.0',
-    provider => 'pip3',
-  }
